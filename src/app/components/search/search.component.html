@@ -1,0 +1,10 @@
+<div class="search-block">
+
+  <form [formGroup]="keywordsForm" (submit)="submit()">
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="Sizing" name="title" placeholder="Ключевые слова" formControlName="keywords" />
+        <button class="btn btn-success">Поиск</button>
+    </div>
+  </form>
+
+</div>

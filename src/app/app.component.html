@@ -1,0 +1,11 @@
+<main class="form-signin">
+    <router-outlet></router-outlet>
+</main>
+
+<div class="main-block">
+<app-search (search)="search($event)"></app-search>
+<app-news-list [news]="news"></app-news-list>
+</div>
+<div class="pagin-block">
+    <pagination-controls previousLabel = "Prev" nextLabel = "Next" (pageChange)="onDataChange($event)"></pagination-controls>
+</div>
