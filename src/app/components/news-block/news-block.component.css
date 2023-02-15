@@ -7,6 +7,12 @@ p {
   padding-top: 20px;
 }
 
+
+a { 
+  text-decoration: none;
+  color: black;
+}
+
 .container__image {
    width: 300px;
    margin: 30px 30px 30px 0;

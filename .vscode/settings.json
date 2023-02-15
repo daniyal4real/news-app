@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/199d82ad-5a0b-4693-b293-1a2569126d93/AppServices/subscriptions/199d82ad-5a0b-4693-b293-1a2569126d93/resourceGroups/app-view/providers/Microsoft.Web/sites/news-view",
+    "appService.deploySubpath": "dist/news-frontend"
+}

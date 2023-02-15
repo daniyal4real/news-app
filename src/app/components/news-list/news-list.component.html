@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1>Актуальные новости</h1>
+  <h1>Actual News</h1>
   <div class="main-block" *ngIf="news">
       <app-news-block *ngFor="let new of news | paginate: {currentPage: page_info?.current_page, totalItems: 1000, itemsPerPage: 15}; let i = index" [news]="new"></app-news-block>
   </div>
