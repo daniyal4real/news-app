@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h1>Actual News</h1>
   <div class="main-block" *ngIf="news">
-      <app-news-block *ngFor="let new of news | paginate: {currentPage: page_info?.current_page, totalItems: 1000, itemsPerPage: 15}; let i = index" [news]="new"></app-news-block>
+      <app-news-block *ngFor="let n of news | paginate: {currentPage: page_info?.current_page, totalItems: totalItems, itemsPerPage: 15}; let i = index" [news]="n"></app-news-block>
   </div>
 </div>
 
