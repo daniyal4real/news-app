@@ -4,7 +4,7 @@
 
 <div class="main-block">
 <app-search (search)="search($event)"></app-search>
-<app-news-list [news]="news"></app-news-list>
+<app-news-list [news]="news" [page_info]="page_info"></app-news-list>
 </div>
 <div class="pagin-block">
     <pagination-controls previousLabel = "Prev" nextLabel = "Next" (pageChange)="onDataChange($event)"></pagination-controls>

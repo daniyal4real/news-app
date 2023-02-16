@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
       this.page_info = data.page_info;
     })
 
-    
+
   }
 
   search(event: string): void {
@@ -34,12 +34,11 @@ export class AppComponent implements OnInit {
 
 
   onDataChange(event: any): void{
-    console.log(event)
     this.eventID = event
     this.newsService.getById(this.eventID).subscribe((data: Res) => {
       this.news = data.news;
       this.page_info = data.page_info;
-      
+
     })
   }
 }
